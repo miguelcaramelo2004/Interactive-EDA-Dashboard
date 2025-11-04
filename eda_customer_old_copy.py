@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # # Importing Libraries
 
 # In[2]:
@@ -31,7 +28,7 @@ sns.set()
 
 # # Reading the Data
 
-df_customer = pd.read_csv('/Users/miguelcaramelo/Desktop/Data_Science/1_semestre/Data_Mining/Projeto/Data-Mining/DM_AIAI_CustomerDB (1).csv', sep = ',')
+df_customer = pd.read_csv('/Users/miguelcaramelo/Desktop/Data_Science/1_semestre/Data_Mining/Interactive-EDA-Dashboard/DM_AIAI_CustomerDB (1).csv', sep = ',')
 
 import streamlit as st
 import pandas as pd
