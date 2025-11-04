@@ -12,6 +12,8 @@ df_customer.columns = df_customer.columns.str.strip()
 st.set_page_config(page_title="Interactive EDA - Customer Attributes", layout="wide")
 st.title("Interactive Customer EDA Dashboard")
 st.markdown("Explore customer attributes interactively.")
+st.markdown("---")
+st.markdown("**Use sidebar filters to analyze specific customer groups.**")
 
 # Sidebar filters
 st.sidebar.header("Filters")
@@ -126,6 +128,5 @@ st.plotly_chart(fig_province, use_container_width=True)
 st.subheader("Descriptive Statistics")
 st.dataframe(df_filtered.describe(include='all').T)
 
-st.markdown("---")
-st.markdown("**Developed for exploratory analysis of customer attributes.** Use sidebar filters to focus on specific groups.")
+
 
