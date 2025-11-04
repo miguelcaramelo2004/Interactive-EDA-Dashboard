@@ -4,40 +4,21 @@
 
 
 # Remember: library imports are ALWAYS at the top of the script, no exceptions!
-import sqlite3
-import os
-import pandas as pd
-import numpy as np
-
-import matplotlib.pyplot as plt
-import seaborn as sns
-from math import ceil
-
-from itertools import product
-from scipy.stats import skewnorm
-
-from datetime import datetime
-from sklearn.impute import KNNImputer
 
 
-# for better resolution plots
-
-# Setting seaborn style
-sns.set()
-
-
-# # Reading the Data
-
-df_customer = pd.read_csv('/Users/miguelcaramelo/Desktop/Data_Science/1_semestre/Data_Mining/Interactive-EDA-Dashboard/DM_AIAI_CustomerDB (1).csv', sep = ',')
 
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# -------------------------------
-# 1️⃣ Load data
-# -------------------------------
-df = df_customer
+
+#Loading the data
+
+df_customer = pd.read_csv('/Users/miguelcaramelo/Desktop/Data_Science/1_semestre/Data_Mining/Interactive-EDA-Dashboard/DM_AIAI_CustomerDB (1).csv', sep = ',')
+
+
+
+
 
 st.set_page_config(page_title="Interactive EDA - Customer Attributes", layout="wide")
 st.title("👥 Interactive Customer EDA Dashboard")
