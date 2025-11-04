@@ -4,7 +4,7 @@ import plotly.express as px
 
 # Load data
 df_customer = pd.read_csv(
-    '/Users/miguelcaramelo/Desktop/Data_Science/1_semestre/Data_Mining/Interactive-EDA-Dashboard/DM_AIAI_CustomerDB (1).csv',
+    'DM_AIAI_CustomerDB (1).csv',
     sep=','
 )
 df_customer.columns = df_customer.columns.str.strip()
